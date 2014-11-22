@@ -1,0 +1,90 @@
+<html>
+<head>
+ <meta charset="utf-8">
+<link rel="stylesheet" href="static/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<script src="static/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<style type="text/css">
+    .header-img { 
+        width: 80px; 
+        height: 80px;
+        border-radius: 40px;
+        box-sizing: border-box;
+        transition: box-shadow .8s;
+        -webkit-transition: box-shadow .8s;
+    }
+    .user-list {
+        cursor:pointer;
+    }
+    .media:hover .header-img {
+        box-shadow:0 0 5px 5px #bbb;
+    }
+    .media:hover .user-intro {
+        color:#000;
+    }
+    .user-intro {
+        color:#888; 
+        transition: color 1s;
+        -webkit-transition: color 1s;
+    }
+    .footer {
+        border-top:1px solid #eee;
+    }
+    .footer {
+        color:#ccc;
+        padding-top:10px;
+        height: 50px;
+    }
+
+</style>
+</head>
+<body>
+    <div class="page-header text-center">
+        <h2>排行榜</h2>
+    </div>
+<div class="container">
+<ul class="media-group list-unstyled user-list">
+    <li class="media">
+        <a class="media-left" href="#"> 
+            <img class="header-img" src="static/img/2.jpg"/>
+        </a>
+        <div class="media-body user-intro">
+            <b>
+            从那遥远海边慢慢消失的你 
+            本来模糊的脸竟然渐渐清 
+            想要说些什麽又不知从何说起 
+            只有把它放在心底 
+            茫然走在海边看那潮来潮去 
+            徒劳无功想把每朵浪花记清 
+            想要说声爱你却被吹散在风里
+            </b>
+        </div>
+    </li>
+    <li class="media">
+        <a class="media-left" href="#"> 
+            <img class="header-img" src="static/img/2.jpg"/>
+        </a>
+        <div class="media-body user-intro">
+            <b>
+            从那遥远海边慢慢消失的你 
+            本来模糊的脸竟然渐渐清 
+            想要说些什麽又不知从何说起 
+            只有把它放在心底 
+            茫然走在海边看那潮来潮去 
+            徒劳无功想把每朵浪花记清 
+            想要说声爱你却被吹散在风里
+            </b>
+        </div>
+    </li>
+</ul>
+  <ul class="pager">
+    <li class="previous"><a href="#">上一页</a></li>
+    <li class="next"><a href="#">下一页</a></li>
+  </ul>
+</div>
+<div class="footer">
+    <div class="text-center">
+        Copyright
+    </div>
+</div>
+</body>
