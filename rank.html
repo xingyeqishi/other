@@ -2,8 +2,9 @@
 <head>
  <meta charset="utf-8">
 <link rel="stylesheet" href="static/bower_components/bootstrap/dist/css/bootstrap.min.css">
-<script src="static/bower_components/jquery/dist/jquery.min.js"></script>
+<!--
 <script src="static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+-->
 <style type="text/css">
     .header-img { 
         width: 80px; 
@@ -78,8 +79,9 @@
     </li>
 </ul>
   <ul class="pager">
-    <li class="previous"><a href="#">上一页</a></li>
-    <li class="next"><a href="#">下一页</a></li>
+    <input type="hidden" class="J-page-no" value="1"/>
+    <li class="previous"><a class="J-previous" href="#">上一页</a></li>
+    <li class="next"><a class="J-next" href="#">下一页</a></li>
   </ul>
 </div>
 <div class="footer">
@@ -87,4 +89,17 @@
         Copyright
     </div>
 </div>
+<script src="static/bower_components/seajs/dist/sea.js"></script>
+<script>
+    seajs.config({
+        base: "/static/",
+        alias: {
+        "jquery": "bower_components/jquery/dist/jquery.min.js"
+        }
+    })
+
+    // 加载入口模块
+    seajs.use("rank/rank")
+
+</script>
 </body>
